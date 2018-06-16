@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 require('./lib/reader');
+require('./lib/callbacks/callbacks');
+
 
 const data1 = `${__dirname}/./lib/data/data1.txt`;
 const data2 = `${__dirname}/./lib/data/data2.txt`;
