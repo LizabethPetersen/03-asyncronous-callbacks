@@ -14,9 +14,11 @@ fileReader.readFile = (dataArray, callback) => {
 };
 
 // this reads three file paths
-fileReader.readFile = (dataArray, callback) => {
-  return fs.readFile(dataArray[0], (err, data1) => {
-    if (err) return callback(err);
+fileReader.readThreeFiles = (dataArray, callback) => {
+  console.log(dataArray, 'testing data array');
+  return fs.readFile(dataArray[0], (err1, data1) => {
+    console.log(data1.toString(), 'WORD');
+    if (err1) return callback(err1);
     return fs.readFile(dataArray[1], (err2, data2) => {
       if (err2) return callback(err2);
       return fs.readFile(dataArray[2], (err3, data3) => {
