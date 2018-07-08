@@ -1,13 +1,11 @@
 'use strict';
 
 const fs = require('fs');
-require('./lib/reader');
-require('./lib/callbacks/callbacks');
+require('./lib/file-reader/file-reader');
 
-
-const data1 = `${__dirname}/./lib/data/data1.txt`;
-const data2 = `${__dirname}/./lib/data/data2.txt`;
-const data3 = `${__dirname}/./lib/data/data3.txt`;
+const data1 = `${__dirname}/./lib/assets/data1.txt`;
+const data2 = `${__dirname}/./lib/assets/data2.txt`;
+const data3 = `${__dirname}/./lib/assets/data3.txt`;
 
 let dataArray = [];
 
@@ -18,4 +16,3 @@ dataArray = [
 ];
 
 console.log(dataArray); // eslint-disable-line
-
