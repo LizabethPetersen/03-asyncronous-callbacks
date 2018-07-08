@@ -8,7 +8,7 @@ const fileReader = module.exports = {};
 // this reads a single file path
 fileReader.readFile = (dataArray, callback) => {
   return fs.readFile('./data/data1.txt', (err, data1) => {
-    if (err) throw err;
+    if (err) callback(err);
     logger.log(logger.INFO, data1.toString());
   });
 };
