@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const fileReader = require('../lib/file-reader/file-reader');
+const fileReader = require('../lib/reader');
 
 describe('testing to see if I am connected to TravisCI', () => {
   test('should equal true', () => {

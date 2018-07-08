@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-require('./lib/file-reader/file-reader');
+require('./lib/reader');
 
 const data1 = `${__dirname}/./lib/assets/data1.txt`;
 const data2 = `${__dirname}/./lib/assets/data2.txt`;
